@@ -1,6 +1,6 @@
 # minphp/Container
 
-[![Build Status](https://travis-ci.org/phillipsdata/minphp-container.svg?branch=1.0.0)](https://travis-ci.org/phillipsdata/minphp-container)
+[![Build Status](https://travis-ci.org/phillipsdata/minphp-container.svg?branch=master)](https://travis-ci.org/phillipsdata/minphp-container)
 
 A [standards compliant](https://github.com/container-interop/container-interop/) [Pimple](https://github.com/silexphp/Pimple)-based container.
 
