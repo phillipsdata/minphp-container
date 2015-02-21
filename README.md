@@ -1,6 +1,6 @@
 # minphp/Container
 
-[![Build Status](https://travis-ci.org/phillipsdata/minphp-container.svg?branch=master)](https://travis-ci.org/phillipsdata/minphp-container)
+[![Build Status](https://travis-ci.org/phillipsdata/minphp-container.svg?branch=master)](https://travis-ci.org/phillipsdata/minphp-container) [![Coverage Status](https://coveralls.io/repos/phillipsdata/minphp-container/badge.svg)](https://coveralls.io/r/phillipsdata/minphp-container)
 
 A [standards compliant](https://github.com/container-interop/container-interop/) [Pimple](https://github.com/silexphp/Pimple)-based container.
 
@@ -36,7 +36,7 @@ $container->remove('queue');
 
 ```
 
-You can also use the container as an array, as per Pimple. Though, using the **ContainerInterface** defined methods is preferable as it eases switching to a different container ifyou ever need to.
+You can also use the container as an array, as per Pimple. Though, using the **ContainerInterface** defined methods is preferable as it eases switching to a different container if you ever need to.
 
 ```php
 <?php
