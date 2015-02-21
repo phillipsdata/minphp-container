@@ -15,6 +15,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers ::get
+     * @uses \minphp\Container\Container::set
      */
     public function testGet()
     {
@@ -33,6 +34,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers ::has
+     * @uses \minphp\Container\Container::set
      */
     public function testHas()
     {
@@ -43,6 +45,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers ::set
+     * @uses \minphp\Container\Container::get
      */
     public function testSet()
     {
@@ -60,6 +63,8 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers ::remove
+     * @uses \minphp\Container\Container::set
+     * @uses \minphp\Container\Container::has
      */
     public function testRemove()
     {
