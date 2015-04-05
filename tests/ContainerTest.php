@@ -51,7 +51,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
     {
         $this->Container->set(
             'queue',
-            function($c) {
+            function ($c) {
                 return new \SplQueue();
             }
         );
