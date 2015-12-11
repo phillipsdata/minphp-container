@@ -1,4 +1,4 @@
-# minphp/Container
+# Minphp/Container
 
 [![Build Status](https://travis-ci.org/phillipsdata/minphp-container.svg?branch=master)](https://travis-ci.org/phillipsdata/minphp-container) [![Coverage Status](https://coveralls.io/repos/phillipsdata/minphp-container/badge.svg)](https://coveralls.io/r/phillipsdata/minphp-container)
 
@@ -16,7 +16,7 @@ composer require minphp/container:~1.0
 
 ```php
 <?php
-use minphp\Container\Container;
+use Minphp\Container\Container;
 
 $container = new Container();
 
@@ -40,7 +40,7 @@ You can also use the container as an array, as per Pimple. Though, using the **C
 
 ```php
 <?php
-use minphp\Container\Container;
+use Minphp\Container\Container;
 
 $container = new Container();
 $container['queue'] = function($c) {
@@ -58,12 +58,12 @@ interface ContainerInterface
 {
     // inherited from Interop\Container\ContainerInterface
     public function get($id);
-    
+
     // inherited from Interop\Container\ContainerInterface
     public function has($id);
-    
+
     public function set($id, $value);
-    
+
     public function remove($id);
 }
 ```
@@ -75,8 +75,8 @@ Also provided is the **ContainerAwareInterface**, which allows your classes to d
 ```php
 interface ContainerAwareInterface
 {
-    public function setContainer(minphp\Container\ContainerInterface $container = null);
-    
+    public function setContainer(Minphp\Container\ContainerInterface $container = null);
+
     public function getContainer();
 }
 ```
@@ -87,13 +87,13 @@ interface ContainerAwareInterface
 <?php
 namespace myApp\Controller;
 
-use minphp\Container\ContainerAwareInterface;
-use minphp\Container\ContainerInterface;
+use Minphp\Container\ContainerAwareInterface;
+use Minphp\Container\ContainerInterface;
 
 class MyController implements ContainerAwareInterface
 {
     private $container = null;
-    
+
     public function setContainer(ContainerInterface $container = null)
     {
         $this->container = $container;
