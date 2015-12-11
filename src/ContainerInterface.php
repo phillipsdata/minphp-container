@@ -1,5 +1,5 @@
 <?php
-namespace minphp\Container;
+namespace Minphp\Container;
 
 use Interop\Container\ContainerInterface as InteropContainerInterface;
 

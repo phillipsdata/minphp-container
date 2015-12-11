@@ -1,5 +1,5 @@
 <?php
-namespace minphp\Container;
+namespace Minphp\Container;
 
 /**
  * An interface allowing injection of a container
@@ -10,14 +10,14 @@ interface ContainerAwareInterface
     /**
      * Adds the container
      *
-     * @param minphp\Container\ContainerInterface $container
+     * @param Minphp\Container\ContainerInterface $container
      */
     public function setContainer(ContainerInterface $container = null);
 
     /**
      * Fetches a container
      *
-     * @return minphp\Container\ContainerInterface
+     * @return Minphp\Container\ContainerInterface
      */
     public function getContainer();
 }

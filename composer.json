@@ -21,6 +21,9 @@
         "satooshi/php-coveralls": "dev-master"
     },
     "autoload": {
-        "psr-4": {"minphp\\Container\\": "src"}
+        "psr-4": {"Minphp\\Container\\": "src"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Minphp\\Container\\Tests\\": "tests"}
     }
 }

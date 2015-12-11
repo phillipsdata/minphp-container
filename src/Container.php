@@ -1,8 +1,8 @@
 <?php
-namespace minphp\Container;
+namespace Minphp\Container;
 
 use Pimple\Container as PimpleContainer;
-use minphp\Container\Exception\NotFoundException;
+use Minphp\Container\Exception\NotFoundException;
 
 /**
  * A Container that extends Pimple using a standards compliant interface
