@@ -9,7 +9,7 @@ A [standards compliant](https://github.com/container-interop/container-interop/)
 Install via composer:
 
 ```sh
-composer require minphp/container:~1.0
+composer require minphp/container:~2.0
 ```
 
 ## Basic Usage
