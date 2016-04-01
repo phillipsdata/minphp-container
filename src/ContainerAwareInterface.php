@@ -13,11 +13,4 @@ interface ContainerAwareInterface
      * @param Minphp\Container\ContainerInterface $container
      */
     public function setContainer(ContainerInterface $container = null);
-
-    /**
-     * Fetches a container
-     *
-     * @return Minphp\Container\ContainerInterface
-     */
-    public function getContainer();
 }
